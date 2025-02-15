@@ -1,4 +1,5 @@
 import { Ionicons } from "@expo/vector-icons";
+import { useEffect } from "react";
 import { Image, ScrollView, StyleSheet, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import useSWR from "swr";
@@ -16,6 +17,10 @@ type TravelLocation = {
 const fetcher = (url: string) =>
 	fetch(url, {
 		method: "POST",
+		headers: {
+			"Access-Control-Allow-Origin": "*",
+			"Access-Control-Allow-Headers": "Content-Type",
+		},
 	}).then((res) => res.json());
 
 export default function HomeScreen() {
@@ -24,6 +29,18 @@ export default function HomeScreen() {
 		"https://cdfvxxcscwbuproxmigr.supabase.co/functions/v1/demo-travel-location-list",
 		fetcher,
 	);
+
+	useEffect(() => {
+		console.log(data);
+	}, [data]);
+
+	useEffect(() => {
+		console.log(error);
+	}, [error]);
+
+	useEffect(() => {
+		console.log(isLoading);
+	}, [isLoading]);
 
 	return (
 		<>
