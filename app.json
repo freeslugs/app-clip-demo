@@ -1,69 +1,79 @@
 {
-	"expo": {
-		"name": "app-clip-demo",
-		"slug": "app-clip-demo",
-		"version": "1.0.0",
-		"orientation": "portrait",
-		"icon": "./assets/images/icon.png",
-		"scheme": "myapp",
-		"userInterfaceStyle": "automatic",
-		"newArchEnabled": true,
-		"ios": {
-			"supportsTablet": true,
-			"appleTeamId": "55SY7P9Z98",
-			"bundleIdentifier": "com.yuchida.app-clip-demo"
-		},
-		"android": {
-			"adaptiveIcon": {
-				"foregroundImage": "./assets/images/adaptive-icon.png",
-				"backgroundColor": "#ffffff"
-			}
-		},
-		"web": {
-			"bundler": "metro",
-			"output": "static",
-			"favicon": "./assets/images/favicon.png"
-		},
-		"plugins": [
-			"expo-router",
-			[
-				"expo-splash-screen",
-				{
-					"image": "./assets/images/splash-icon.png",
-					"imageWidth": 200,
-					"resizeMode": "contain",
-					"backgroundColor": "#ffffff"
-				}
-			],
-			"@bacons/apple-targets"
-		],
-		"experiments": {
-			"typedRoutes": true
-		},
-		"extra": {
-			"router": {
-				"origin": false
-			},
-			"eas": {
-				"build": {
-					"experimental": {
-						"ios": {
-							"appExtensions": [
-								{
-									"bundleIdentifier": "com.yuchida.app-clip-demo.clip",
-									"targetName": "clip",
-									"entitlements": {
-										"com.apple.developer.parent-application-identifiers": [
-											"$(AppIdentifierPrefix)com.yuchida.app-clip-demo"
-										]
-									}
-								}
-							]
-						}
-					}
-				},
-				"projectId": "08f42eec-a5e8-4f00-8221-23c77e05d9b6"
-			}
-		}
-	}
+  "expo": {
+    "name": "app-clip-demo",
+    "slug": "app-clip-demo",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+	  "buildNumber": "3",
+      "supportsTablet": true,
+      "appleTeamId": "55SY7P9Z98",
+      "bundleIdentifier": "com.bauhaus.app-clip-demo",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.bauhaus.appclipdemo"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ],
+      "@bacons/apple-targets"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+	  "appClip": {
+        "ios": {
+          "buildNumber": "3"
+        }
+      },
+      "eas": {
+        "build": {
+          "experimental": {
+            "ios": {
+              "appExtensions": [
+                {
+                  "bundleIdentifier": "com.bauhaus.app-clip-demo.clip",
+                  "targetName": "clip",
+                  "entitlements": {
+                    "com.apple.developer.parent-application-identifiers": [
+                      "$(AppIdentifierPrefix)com.bauhaus.app-clip-demo"
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "projectId": "e7d1464b-2463-4692-9004-0b3ee5b03c01"
+      }
+    }
+  }
 }
