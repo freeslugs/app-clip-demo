@@ -36,9 +36,5 @@
     <string>Automatic</string>
     <key>UIViewControllerBasedStatusBarAppearance</key>
     <false/>
-    <key>com.apple.developer.associated-domains</key>
-    <array>
-      <string>appclips:app-clip-demo.expo.app/</string>
-    </array>
   </dict>
 </plist>
