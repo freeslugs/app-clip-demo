@@ -2,14 +2,14 @@
   "expo": {
     "name": "app-clip-demo",
     "slug": "app-clip-demo",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-	  "buildNumber": "3",
+	  "buildNumber": "2",
       "supportsTablet": true,
       "appleTeamId": "55SY7P9Z98",
       "bundleIdentifier": "com.bauhaus.app-clip-demo",
@@ -51,7 +51,7 @@
       },
 	  "appClip": {
         "ios": {
-          "buildNumber": "3"
+          "buildNumber": "2"
         }
       },
       "eas": {
