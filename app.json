@@ -2,16 +2,16 @@
   "expo": {
     "name": "app-clip-demo",
     "slug": "app-clip-demo",
-    "version": "1.0.10",
+    "version": "1.0.11",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
-    "ios": {
-      "requireFullScreen": true,
-      "buildNumber": "2",
-      "supportsTablet": true,
+    "ios": { 
+	  "buildNumber": "2",
+	  "requireFullScreen": true,
+      "supportsTablet": false,
       "appleTeamId": "Y84JP67J9W",
       "bundleIdentifier": "com.bauhaus.app-clip-demo",
       "infoPlist": {
