@@ -1,7 +1,7 @@
 {
   "name": "app-clip-demo",
   "main": "expo-router/entry",
-  "version": "1.0.2",
+  "version": "1.0.6",
   "scripts": {
     "start": "expo start",
     "reset-project": "node ./scripts/reset-project.js",
@@ -40,7 +40,8 @@
     "react-native-screens": "~4.4.0",
     "react-native-web": "~0.19.13",
     "react-native-webview": "13.12.5",
-    "swr": "^2.3.2"
+    "swr": "^2.3.2",
+    "expo-build-properties": "~0.13.2"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",

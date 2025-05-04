@@ -2,20 +2,20 @@
   "expo": {
     "name": "app-clip-demo",
     "slug": "app-clip-demo",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-	  "buildNumber": "2",
+      "buildNumber": "2",
       "supportsTablet": true,
       "appleTeamId": "55SY7P9Z98",
       "bundleIdentifier": "com.bauhaus.app-clip-demo",
       "infoPlist": {
         "ITSAppUsesNonExemptEncryption": false,
-		"UISupportedInterfaceOrientations": [
+        "UISupportedInterfaceOrientations": [
           "UIInterfaceOrientationPortrait",
           "UIInterfaceOrientationPortraitUpsideDown",
           "UIInterfaceOrientationLandscapeLeft",
@@ -46,7 +46,22 @@
           "backgroundColor": "#ffffff"
         }
       ],
-      "@bacons/apple-targets"
+      "@bacons/apple-targets",
+	  [
+		"expo-build-properties",
+		{
+		  "ios": {
+			"infoPlist": {
+			  "UISupportedInterfaceOrientations": [
+				"UIInterfaceOrientationPortrait",
+				"UIInterfaceOrientationPortraitUpsideDown",
+				"UIInterfaceOrientationLandscapeLeft",
+				"UIInterfaceOrientationLandscapeRight"
+			  ]
+			}
+		  }
+		}
+	  ]
     ],
     "experiments": {
       "typedRoutes": true
@@ -55,7 +70,7 @@
       "router": {
         "origin": false
       },
-	  "appClip": {
+      "appClip": {
         "ios": {
           "buildNumber": "2"
         }
@@ -73,7 +88,7 @@
                       "$(AppIdentifierPrefix)com.bauhaus.app-clip-demo"
                     ]
                   },
-				  "infoPlist": {
+                  "infoPlist": {
                     "UISupportedInterfaceOrientations": [
                       "UIInterfaceOrientationPortrait",
                       "UIInterfaceOrientationPortraitUpsideDown",
