@@ -2,26 +2,20 @@
   "expo": {
     "name": "app-clip-demo",
     "slug": "app-clip-demo",
-    "version": "1.0.11",
+    "version": "1.0.12",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": { 
-	  "buildNumber": "2",
+	  "buildNumber": "3",
 	  "requireFullScreen": true,
       "supportsTablet": false,
       "appleTeamId": "Y84JP67J9W",
       "bundleIdentifier": "com.bauhaus.app-clip-demo",
       "infoPlist": {
-        "ITSAppUsesNonExemptEncryption": false,
-        "UISupportedInterfaceOrientations": [
-          "UIInterfaceOrientationPortrait",
-          "UIInterfaceOrientationPortraitUpsideDown",
-          "UIInterfaceOrientationLandscapeLeft",
-          "UIInterfaceOrientationLandscapeRight"
-        ]
+        "ITSAppUsesNonExemptEncryption": false
       }
     },
     "android": {
@@ -47,22 +41,7 @@
           "backgroundColor": "#ffffff"
         }
       ],
-      "@bacons/apple-targets",
-	  [
-		"expo-build-properties",
-		{
-		  "ios": {
-			"infoPlist": {
-			  "UISupportedInterfaceOrientations": [
-				"UIInterfaceOrientationPortrait",
-				"UIInterfaceOrientationPortraitUpsideDown",
-				"UIInterfaceOrientationLandscapeLeft",
-				"UIInterfaceOrientationLandscapeRight"
-			  ]
-			}
-		  }
-		}
-	  ]
+      "@bacons/apple-targets"
     ],
     "experiments": {
       "typedRoutes": true
@@ -73,7 +52,7 @@
       },
       "appClip": {
         "ios": {
-          "buildNumber": "2"
+          "buildNumber": "3"
         }
       },
       "eas": {
@@ -87,14 +66,6 @@
                   "entitlements": {
                     "com.apple.developer.parent-application-identifiers": [
                       "$(AppIdentifierPrefix)com.bauhaus.app-clip-demo"
-                    ]
-                  },
-                  "infoPlist": {
-                    "UISupportedInterfaceOrientations": [
-                      "UIInterfaceOrientationPortrait",
-                      "UIInterfaceOrientationPortraitUpsideDown",
-                      "UIInterfaceOrientationLandscapeLeft",
-                      "UIInterfaceOrientationLandscapeRight"
                     ]
                   }
                 }
