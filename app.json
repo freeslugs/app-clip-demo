@@ -2,7 +2,7 @@
   "expo": {
     "name": "app-clip-demo",
     "slug": "app-clip-demo",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
@@ -15,13 +15,11 @@
       "appleTeamId": "Y84JP67J9W",
       "bundleIdentifier": "com.bauhaus.app-clip-demo",
       "infoPlist": {
-		"UILaunchStoryboardName": "SplashScreen",
-		"UIUserInterfaceStyle": "Automatic",
+        "UILaunchStoryboardName": "SplashScreen",
+        "UIUserInterfaceStyle": "Automatic",
         "ITSAppUsesNonExemptEncryption": false
-	  },
-	  "associatedDomains": [
-        "appclips:app-clip-demo.bauhaus.com"
-      ]
+      },
+      "associatedDomains": ["appclips:app-clip-demo.bauhaus.com"]
     },
     "android": {
       "adaptiveIcon": {
@@ -58,8 +56,8 @@
       "appClip": {
         "ios": {
           "buildNumber": "3",
-		  "requireFullScreen": true,
-     	 "supportsTablet": false,
+          "requireFullScreen": true,
+          "supportsTablet": false,
           "splashScreen": {
             "image": "./assets/images/splash-icon.png",
             "imageWidth": 200,
@@ -74,8 +72,8 @@
             "ios": {
               "appExtensions": [
                 {
-					"requireFullScreen": true,
-      				"supportsTablet": false,
+                  "requireFullScreen": true,
+                  "supportsTablet": false,
                   "bundleIdentifier": "com.bauhaus.app-clip-demo.clip",
                   "targetName": "clip",
                   "entitlements": {
@@ -83,11 +81,11 @@
                       "$(AppIdentifierPrefix)com.bauhaus.app-clip-demo"
                     ]
                   },
-				  "infoPlist": {
-					"UILaunchStoryboardName": "SplashScreen",
-					"UIUserInterfaceStyle": "Automatic",
-					"NSUserActivityTypes": ["NSUserActivityTypeBrowsingWeb"]
-				  }
+                  "infoPlist": {
+                    "UILaunchStoryboardName": "SplashScreen",
+                    "UIUserInterfaceStyle": "Automatic",
+                    "NSUserActivityTypes": ["NSUserActivityTypeBrowsingWeb"]
+                  }
                 }
               ]
             }
@@ -98,4 +96,3 @@
     }
   }
 }
-
