@@ -2,7 +2,7 @@
   "expo": {
     "name": "app-clip-demo",
     "slug": "app-clip-demo",
-    "version": "1.2.6",
+    "version": "1.2.7",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
@@ -10,7 +10,8 @@
     "newArchEnabled": true,
     "ios": {
       "buildNumber": "3",
-      "supportsTablet": true,
+      "requireFullScreen": true,
+      "supportsTablet": false,
       "appleTeamId": "Y84JP67J9W",
       "bundleIdentifier": "com.bauhaus.app-clip-demo",
       "infoPlist": {
@@ -76,8 +77,7 @@
                   "entitlements": {
                     "com.apple.developer.parent-application-identifiers": [
                       "$(AppIdentifierPrefix)com.bauhaus.app-clip-demo"
-                    ],
-                    "com.apple.developer.associated-domains": ["appclips:app-clip-demo.bauhaus.com"]
+                    ]
                   }
                 }
               ]
