@@ -25,6 +25,35 @@ In the output, you'll find options to open the app in a
 
 You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
+## Code Quality
+
+This project uses [Biome](https://biomejs.dev/) for code formatting and linting. Biome is a fast formatter, linter, and more for JavaScript, TypeScript, JSON, and more.
+
+### Available Commands
+
+- Check for issues:
+  ```bash
+  npx @biomejs/biome check .
+  ```
+
+- Fix issues automatically:
+  ```bash
+  npx @biomejs/biome check --write .
+  ```
+
+- Format your code:
+  ```bash
+  npx @biomejs/biome format .
+  ```
+
+### Configuration
+
+The Biome configuration is in `biome.json`. It includes:
+- Code style rules
+- TypeScript-specific rules
+- React/React Native best practices
+- Accessibility rules
+
 ## Get a fresh project
 
 When you're ready, run:
@@ -48,3 +77,11 @@ Join our community of developers creating universal apps.
 
 - [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
 - [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+
+```
+npx expo prebuild --clean -p ios
+```
+
+```
+eas build --clear-cache -p ios --profile production --auto-submit
+```

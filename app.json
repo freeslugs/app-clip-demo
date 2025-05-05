@@ -2,7 +2,7 @@
   "expo": {
     "name": "app-clip-demo",
     "slug": "app-clip-demo",
-    "version": "1.2.1",
+    "version": "1.2.6",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
@@ -10,13 +10,10 @@
     "newArchEnabled": true,
     "ios": {
       "buildNumber": "3",
-      "requireFullScreen": true,
-      "supportsTablet": false,
+      "supportsTablet": true,
       "appleTeamId": "Y84JP67J9W",
       "bundleIdentifier": "com.bauhaus.app-clip-demo",
       "infoPlist": {
-        "UILaunchStoryboardName": "SplashScreen",
-        "UIUserInterfaceStyle": "Automatic",
         "ITSAppUsesNonExemptEncryption": false
       },
       "associatedDomains": ["appclips:app-clip-demo.bauhaus.com"]
@@ -79,19 +76,15 @@
                   "entitlements": {
                     "com.apple.developer.parent-application-identifiers": [
                       "$(AppIdentifierPrefix)com.bauhaus.app-clip-demo"
-                    ]
-                  },
-                  "infoPlist": {
-                    "UILaunchStoryboardName": "SplashScreen",
-                    "UIUserInterfaceStyle": "Automatic",
-                    "NSUserActivityTypes": ["NSUserActivityTypeBrowsingWeb"]
+                    ],
+                    "com.apple.developer.associated-domains": ["appclips:app-clip-demo.bauhaus.com"]
                   }
                 }
               ]
             }
           }
         },
-        "projectId": "f80f0560-69e9-4c2b-8707-f6049080742d"
+        "projectId": "aa8088d6-12b5-4f05-98ed-f889f510fb9d"
       }
     }
   }
