@@ -2,7 +2,7 @@
   "expo": {
     "name": "app-clip-demo",
     "slug": "app-clip-demo",
-    "version": "1.0.14",
+    "version": "1.0.15",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
@@ -73,7 +73,17 @@
                     "com.apple.developer.parent-application-identifiers": [
                       "$(AppIdentifierPrefix)com.bauhaus.app-clip-demo"
                     ]
-                  }
+                  },
+				  "infoPlist": {
+					"UILaunchStoryboardName": "SplashScreen",
+					"UIUserInterfaceStyle": "Automatic",
+					"UISupportedInterfaceOrientations": [
+						"UIInterfaceOrientationPortrait",
+						"UIInterfaceOrientationPortraitUpsideDown",
+						"UIInterfaceOrientationLandscapeLeft",
+						"UIInterfaceOrientationLandscapeRight"
+					]
+				  }
                 }
               ]
             }
@@ -84,3 +94,4 @@
     }
   }
 }
+
