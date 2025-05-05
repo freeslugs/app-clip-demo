@@ -2,14 +2,14 @@
   "expo": {
     "name": "app-clip-demo",
     "slug": "app-clip-demo",
-    "version": "1.0.13",
+    "version": "1.0.14",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "buildNumber": "4",
+      "buildNumber": "3",
       "requireFullScreen": true,
       "supportsTablet": false,
       "appleTeamId": "Y84JP67J9W",
@@ -52,7 +52,7 @@
       },
       "appClip": {
         "ios": {
-          "buildNumber": "4",
+          "buildNumber": "3",
           "splashScreen": {
             "image": "./assets/images/splash-icon.png",
             "imageWidth": 200,
