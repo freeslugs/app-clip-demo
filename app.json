@@ -2,7 +2,7 @@
   "expo": {
     "name": "app-clip-demo",
     "slug": "app-clip-demo",
-    "version": "1.0.15",
+    "version": "1.1.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
@@ -15,8 +15,10 @@
       "appleTeamId": "Y84JP67J9W",
       "bundleIdentifier": "com.bauhaus.app-clip-demo",
       "infoPlist": {
+		"UILaunchStoryboardName": "SplashScreen",
+		"UIUserInterfaceStyle": "Automatic",
         "ITSAppUsesNonExemptEncryption": false
-      }
+	  }
     },
     "android": {
       "adaptiveIcon": {
@@ -77,6 +79,7 @@
 				  "infoPlist": {
 					"UILaunchStoryboardName": "SplashScreen",
 					"UIUserInterfaceStyle": "Automatic",
+					"NSUserActivityTypes": ["NSUserActivityTypeBrowsingWeb"],
 					"UISupportedInterfaceOrientations": [
 						"UIInterfaceOrientationPortrait",
 						"UIInterfaceOrientationPortraitUpsideDown",
