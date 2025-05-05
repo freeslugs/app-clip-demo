@@ -2,15 +2,15 @@
   "expo": {
     "name": "app-clip-demo",
     "slug": "app-clip-demo",
-    "version": "1.0.12",
+    "version": "1.0.13",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
-    "ios": { 
-	  "buildNumber": "3",
-	  "requireFullScreen": true,
+    "ios": {
+      "buildNumber": "4",
+      "requireFullScreen": true,
       "supportsTablet": false,
       "appleTeamId": "Y84JP67J9W",
       "bundleIdentifier": "com.bauhaus.app-clip-demo",
@@ -52,7 +52,13 @@
       },
       "appClip": {
         "ios": {
-          "buildNumber": "3"
+          "buildNumber": "4",
+          "splashScreen": {
+            "image": "./assets/images/splash-icon.png",
+            "imageWidth": 200,
+            "resizeMode": "contain",
+            "backgroundColor": "#ffffff"
+          }
         }
       },
       "eas": {
@@ -73,7 +79,7 @@
             }
           }
         },
-        "projectId": "e7d1464b-2463-4692-9004-0b3ee5b03c01"
+        "projectId": "f80f0560-69e9-4c2b-8707-f6049080742d"
       }
     }
   }
