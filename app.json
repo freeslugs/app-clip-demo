@@ -2,7 +2,7 @@
   "expo": {
     "name": "app-clip-demo",
     "slug": "app-clip-demo",
-    "version": "1.1.1",
+    "version": "1.1.2",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
@@ -58,6 +58,8 @@
       "appClip": {
         "ios": {
           "buildNumber": "3",
+		  "requireFullScreen": true,
+     	 "supportsTablet": false,
           "splashScreen": {
             "image": "./assets/images/splash-icon.png",
             "imageWidth": 200,
@@ -72,6 +74,8 @@
             "ios": {
               "appExtensions": [
                 {
+					"requireFullScreen": true,
+      				"supportsTablet": false,
                   "bundleIdentifier": "com.bauhaus.app-clip-demo.clip",
                   "targetName": "clip",
                   "entitlements": {

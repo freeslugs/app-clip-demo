@@ -6,5 +6,9 @@
     <array>
       <string>$(AppIdentifierPrefix)com.bauhaus.app-clip-demo</string>
     </array>
+    <key>com.apple.developer.associated-domains</key>
+    <array>
+      <string>appclips:app-clip-demo.bauhaus.com</string>
+    </array>
   </dict>
 </plist>
